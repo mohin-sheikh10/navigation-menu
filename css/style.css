@@ -71,7 +71,7 @@ body {
 .navlink li a:hover {
   background-color: var(--main-color);
 }
-.contactBtn {
+.btn {
   background-color: var(--main-color);
   color: var(--black);
   padding: 12px 25px;
@@ -80,6 +80,107 @@ body {
   border-radius: 5px;
   border: var(--border);
 }
-.contactBtn:hover {
+.btn:hover {
   background-color: var(--light-color);
+}
+
+/* --- Home Section --- */
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+  align-items: center;
+}
+.homeInfo h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+.homeInfo h1 {
+  font-size: 8rem;
+  font-weight: 700;
+}
+.homeInfo p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 80%;
+  line-height: 2;
+  margin: 3rem 0;
+}
+.btn2 {
+  margin-left: 2rem;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.btn2:hover {
+  transform: scale(1.1);
+}
+.btn2 i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.scroll {
+  margin-top: 9rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  animation: scrollDown 3s 1s infinite forwards ease;
+}
+.scroll i {
+  margin-right: 1rem;
+}
+@keyframes scrollDown {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.homeImg {
+  position: relative;
+  margin-top: 5rem;
+}
+.mainImag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainImag img {
+  width: 65%;
+  border-radius: 10px;
+}
+.img2 {
+  width: 250px;
+  position: absolute;
+  top: -8%;
+  right: 25%;
+  z-index: 100;
+}
+.img2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+.img3 {
+  width: 270px;
+  position: absolute;
+  left:4rem;
+}
+.img3 img {
+  width: 100%;
+}
+.img3:hover {
+  transform: scale(1.2);
+  z-index: 1000;
+}
+.img2:hover {
+  transform: scale(1.1);
 }
